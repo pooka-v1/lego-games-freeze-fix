@@ -59,10 +59,9 @@ the game after starting it, it is probably running the other `.exe`: use the oth
 
 ### Tested, no freezes found
 
-| Game | Year | Notes |
-|---|---|---|
-| LEGO Harry Potter: Years 1-4 | 2010 | Only looks for controllers at startup. If you see freezes, use the 32-bit DLL. |
-| LEGO Star Wars: The Skywalker Saga | 2022 | Does not need the DLL. |
+- **LEGO Harry Potter: Years 1-4** (2010): no freezes in our test (it only looked for controllers at startup),
+  but they have been seen in this game before. If you get them, use the 32-bit DLL.
+- **LEGO Star Wars: The Skywalker Saga** (2022): does not need the DLL.
 
 ### Not tested
 

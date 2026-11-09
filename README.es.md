@@ -60,10 +60,9 @@ el juego no aparece `dinput8-proxy.log` a su lado, seguramente está corriendo e
 
 ### Probados, sin congelaciones
 
-| Juego | Año | Notas |
-|---|---|---|
-| LEGO Harry Potter: Years 1-4 | 2010 | Solo busca mandos al arrancar. Si notas congelaciones, usa la DLL de 32 bits. |
-| LEGO Star Wars: The Skywalker Saga | 2022 | No necesita la DLL. |
+- **LEGO Harry Potter: Years 1-4** (2010): sin congelaciones en nuestra prueba (solo buscó mandos al
+  arrancar), pero se han visto antes en este juego. Si te pasa, usa la DLL de 32 bits.
+- **LEGO Star Wars: The Skywalker Saga** (2022): no necesita la DLL.
 
 ### Sin probar
 
