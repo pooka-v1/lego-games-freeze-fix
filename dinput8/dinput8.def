@@ -1,0 +1,10 @@
+; Exported names must match the real dinput8.dll exactly. On 32-bit, WINAPI (__stdcall) functions get
+; decorated names (_DirectInput8Create@20); listing them here exports the plain names Windows looks up.
+LIBRARY dinput8
+EXPORTS
+    DirectInput8Create
+    DllCanUnloadNow PRIVATE
+    DllGetClassObject PRIVATE
+    DllRegisterServer PRIVATE
+    DllUnregisterServer PRIVATE
+    GetdfDIJoystick

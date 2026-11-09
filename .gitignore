@@ -1,0 +1,26 @@
+# Visual Studio and build output (the DLLs are published as release assets, not in the repo)
+.vs/
+bin/
+obj/
+*.vcxproj.user
+
+# Local working notes (Spanish, personal paths and hardware)
+BITACORA.md
+JUEGOS.md
+SESSION_CONTEXT.md
+CLAUDE.md
+
+# Project temporaries: logs, save game backups
+temp/
+
+# Investigation data
+tools/symbols/
+tools/dumps/
+tools/freeze-probe.csv
+
+# Sysinternals tools: Microsoft's license does not allow redistribution
+tools/procdump/
+tools/procexp/
+
+# Hardcoded to the author's game libraries; to be replaced
+tools/check-games.ps1
