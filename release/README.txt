@@ -57,15 +57,44 @@ LEGO de TT Games.
 
 INSTALAR
 --------
-Copia dinput8.dll junto al .exe del juego, desde la carpeta que diga la lista
-de arriba (32-bit o 64-bit). Arranca el juego: si aparece dinput8-proxy.log
-junto al .exe, funciona. Si no aparece, usa la otra DLL.
+Copia dinput8.dll junto al .exe del juego, desde la carpeta que diga esta lista
+(32-bit o 64-bit). Arranca el juego: si aparece dinput8-proxy.log junto al
+.exe, funciona. Si no aparece, usa la otra DLL.
 
 No la copies nunca en C:\Windows.
 
-Mas detalles, otros juegos y ayuda: en la pagina web de arriba (en espanol:
-README.es.md).
+32-bit:
+  LEGO Indiana Jones: The Original Adventures
+  LEGO Batman: The Videogame
+  LEGO Star Wars: The Complete Saga
+  LEGO Indiana Jones 2: The Adventure Continues
+  LEGO Star Wars III: The Clone Wars
+  LEGO Pirates of the Caribbean: The Video Game
+  LEGO Harry Potter: Years 5-7
+  LEGO Batman 2: DC Super Heroes
+  LEGO The Lord of the Rings
+  LEGO Marvel Super Heroes
+  The LEGO Movie Videogame
+  LEGO The Hobbit
+
+64-bit:
+  LEGO Batman 3: Beyond Gotham
+  LEGO Jurassic World
+  LEGO Marvel's Avengers
+  LEGO Star Wars: The Force Awakens
+  LEGO Worlds
+  The LEGO NINJAGO Movie Video Game
+  LEGO Marvel Super Heroes 2
+  LEGO The Incredibles
+  LEGO DC Super-Villains
+  The LEGO Movie 2 Videogame
+
+Probado en Steam, GOG y Epic. Mas detalles, otros juegos y ayuda: en la pagina
+web del principio (en espanol: README.es.md).
 
 DESINSTALAR
 -----------
 Borra dinput8.dll y dinput8-proxy.log de la carpeta del juego.
+
+Proyecto no oficial, hecho por un aficionado, sin relacion con el Grupo LEGO,
+TT Games ni Warner Bros. Games. Licencia MIT (c) 2026 pooka-v1.
