@@ -75,7 +75,8 @@ fue, con el fichero `dinput8-proxy.log` (ver "¿Funciona?"). Se puede escribir e
 ## Instalar
 
 1. Descarga `lego-games-freeze-fix-v1.0.zip` de
-   [Releases](https://github.com/pooka-v1/lego-games-freeze-fix/releases) y descomprímelo. Contiene:
+   [Releases](https://github.com/pooka-v1/lego-games-freeze-fix/releases) (también en
+   [Nexus Mods](https://www.nexusmods.com/legostarwarsthecompletesaga/mods/220)) y descomprímelo. Contiene:
    ```
    32-bit\dinput8.dll
    64-bit\dinput8.dll
