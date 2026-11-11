@@ -16,6 +16,8 @@ copy one file next to the game, no game files are modified.
 - It happens on Steam, GOG and Epic, on any drive, on fast PCs too. The more controllers connected, the
   longer the freezes. It is not your PC: it is how the games look for controllers.
 
+[Video](https://youtu.be/3ZfiehEKUzI) (2 min): LEGO Star Wars: The Complete Saga with and without the fix.
+
 ## Games
 
 The DLL must match the game's `.exe`: **32-bit** or **64-bit**. The zip has both; this table says which

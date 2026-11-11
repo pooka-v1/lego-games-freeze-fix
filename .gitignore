@@ -13,6 +13,9 @@ CLAUDE.md
 # Project temporaries: logs, save game backups
 temp/
 
+# Promo images and videos for Nexus Mods and Steam guides
+img/
+
 # Investigation data
 tools/symbols/
 tools/dumps/

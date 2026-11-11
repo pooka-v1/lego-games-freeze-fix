@@ -16,6 +16,8 @@ copia junto al juego: un solo fichero, sin modificar ningún fichero del juego.
 - Pasa en Steam, GOG y Epic, desde cualquier disco, también en PC potentes. Cuantos más mandos conectados, más
   duran las congelaciones. No es tu PC: es la forma en que los juegos buscan los mandos.
 
+[Vídeo](https://youtu.be/3ZfiehEKUzI) (2 min, en inglés): LEGO Star Wars: The Complete Saga con y sin el arreglo.
+
 ## Juegos
 
 La DLL tiene que tener los mismos bits que el `.exe` del juego: **32** o **64 bits**. El zip trae las dos; esta
