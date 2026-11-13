@@ -145,14 +145,21 @@ stuck in the same place, a **WMI** query (`fastprox!CWbemSvcWrapper::XWbemServic
 
 The games contain Microsoft's sample code `IsXInputDevice`, which many games of that time copied as is:
 
-1. About once a minute the game lists its input devices with DirectInput (`EnumDevices`): keyboards, mice and
-   controllers.
+1. Every time Windows reports a change in the PC's devices, the game lists its input devices again with
+   DirectInput (`EnumDevices`): keyboards, mice and controllers.
 2. **For each device found**, keyboard and mouse included, it asks Windows for the full list of devices
    (`Win32_PnPEntity`) to see if its ID contains `IG_`, which means an Xbox controller.
 3. A normal PC has a few hundred devices (motherboard, Bluetooth, audio, network...). Each query takes about
    1.7 s, and with several devices and the PC busy with the game, the wait goes up to 15 s.
 
 Microsoft's own documentation advises against running that query repeatedly.
+
+**What makes the game search again.** Any change in the device list: connecting or disconnecting a
+controller, Bluetooth, Steam's virtual controllers, and also devices on your home network. In our tests, a
+Smart TV in standby kept dropping off the network and coming back about once a minute, and every time the game
+froze; with the TV unplugged, those freezes stopped. That is why some players found that unplugging the
+network cable "fixed" it, and why it can get worse at night, when the TVs are switched off. The DLL fixes it
+whatever the trigger.
 
 ### The fix
 

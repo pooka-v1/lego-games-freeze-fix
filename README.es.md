@@ -147,14 +147,21 @@ hilo principal del juego estaba parado siempre en el mismo sitio, una consulta a
 Los juegos llevan el código de ejemplo de Microsoft `IsXInputDevice`, que muchos juegos de la época copiaron tal
 cual:
 
-1. Más o menos cada minuto, el juego busca sus dispositivos con DirectInput (`EnumDevices`): teclados, ratones
-   y mandos.
+1. Cada vez que Windows avisa de un cambio en los dispositivos del PC, el juego vuelve a buscar los suyos con
+   DirectInput (`EnumDevices`): teclados, ratones y mandos.
 2. **Por cada dispositivo encontrado**, teclado y ratón incluidos, pide a Windows la lista completa de
    dispositivos (`Win32_PnPEntity`) para ver si su identificador contiene `IG_`, es decir, si es un mando Xbox.
 3. Un PC normal tiene unos cientos de dispositivos (placa base, Bluetooth, audio, red...). Cada consulta tarda
    unos 1,7 s, y con varios dispositivos y el PC ocupado con el juego, la espera sube a 15 s.
 
 La propia documentación de Microsoft desaconseja hacer esa consulta de forma repetida.
+
+**Qué hace que el juego vuelva a buscar.** Cualquier cambio en la lista de dispositivos: conectar o desconectar
+un mando, el Bluetooth, los mandos virtuales de Steam, y también los aparatos de la red de casa. En nuestras
+pruebas, una Smart TV en standby se iba de la red y volvía más o menos cada minuto, y cada vez el juego se
+congelaba; con la tele desenchufada, esas congelaciones desaparecieron. Por eso a algunos jugadores les
+"arreglaba" quitar el cable de red, y por eso puede empeorar por la noche, cuando se apagan las teles. La DLL lo
+arregla sea cual sea el disparador.
 
 ### La solución
 
